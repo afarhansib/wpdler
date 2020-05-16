@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wpdler</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+  <nav>
+    <div>
+      <a>Pexels</a>
+    </div>
+  </nav>
+  <div class="container" id="body-content">
+    <div class="card small" id="mainContent">
+      <img src="/assets/img/404error.png">
+    </div>
+    <div id="descContent"></div>
+  </div>
+  <footer>
+    <div class="row">
+      <button id="prev">&blacktriangleleft;</button>
+      <input type="text" id="url" placeholder="search..." value="search?query=black&per_page=1&page=1">
+      <button id="go">&telrec;</button>
+      <button id="next">&blacktriangleright;</button>
+    </div>
+    <div class="row">
+      <button id="download">Download</button>
+    </div>
+  </footer>
+  <script src="/assets/js/socket.io.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

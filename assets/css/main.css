@@ -1,0 +1,137 @@
+:root {
+  --text-color: #523c3d;
+  /*--text-color: #e90e63;*/
+  --color-red: #e51c23;
+  --color-green: #259b24;
+  --color-yellow: #ffc107;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+nav {
+  padding: 0.5rem;
+  width: calc(100% - 2rem);
+  margin: 1rem auto;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card {
+  width: calc(100% - 2rem);
+  margin: 1rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.small {
+  width: 20%;
+  margin: 10rem auto;
+  box-shadow: none;
+}
+
+footer {
+  height: 5.5rem;
+  width: 20.5rem;
+  position: fixed;
+  bottom: 1rem;
+  left: calc(50% - 10.25rem);
+  border-radius: 0.25rem;
+  background-color: white;
+  padding: 0.5rem;
+  display: grid;
+  grid-template-rows: 2rem 2rem;
+  grid-gap: 0.5rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer .row:nth-child(1) {
+  display: grid;
+  grid-template-columns: 2rem 12rem 2rem 2rem;
+  grid-gap: 0.5rem;
+}
+
+footer .row:nth-child(2) {
+  display: grid;
+}
+
+footer button {
+  color: var(--text-color);
+  width: 100%;
+  height: 2rem;
+  border-radius: 0.25rem;
+  border: none;
+  background-color: #eee;
+  font-size: 2rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+footer button:focus,
+footer input:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px var(--text-color);
+}
+
+footer input {
+  border: none;
+  padding: 0.5rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  background-color: #eee;
+}
+
+button#download {
+  text-transform: uppercase;
+  font-size: unset;
+  font-weight: bold;
+  color: white;
+  background-color: var(--color-green);
+}
+
+pre.card {
+  overflow: auto;
+  padding: 1rem;
+}
+
+.string {
+  color: green;
+}
+
+.number {
+  color: darkorange;
+}
+
+.boolean {
+  color: blue;
+}
+
+.null {
+  color: magenta;
+}
+
+.key {
+  color: red;
+}
+
+.toast {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  background-color: white;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}

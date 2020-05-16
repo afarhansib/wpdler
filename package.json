@@ -1,0 +1,16 @@
+{
+  "name": "wpdler",
+  "version": "0.0.1",
+  "description": "Wallpaper Downloader",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "afarhansib",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "socket.io": "^2.3.0"
+  }
+}
